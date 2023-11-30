@@ -8,10 +8,17 @@
 
 a{
     text-decoration: none;
+    color: inherit;
 }
 
 body{
     background-color:whitesmoke;
+    color: black;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
 }
 
 .logo{
@@ -23,7 +30,10 @@ nav{
     margin: auto;
     display: flex;
     justify-content: space-between;
+    max-width: 1000px;
     align-items: center;
+    margin-top: 25px;
+
 }
 
 .nav-links{
@@ -62,9 +72,56 @@ nav{
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 15%;
 
 }
 
-img{
+.container .content h1{
+    font-size: 60px;
+}
+
+.container .content h5{
+    color:dimgrey;
+}
+
+.container .content p{
+    font-size: 20px;
+    line-height:40px;
+}
+
+.image img{
     border-radius: 50%;
+}
+
+.project-container{
+    justify-content: center;
+    align-items: center;
+
+    display: grid;
+    grid-template-columns: 500px 500px;
+    
+    gap: 25px;
+    margin-bottom: 200px;
+}
+
+.project {
+    /* Add shadows to create the "card" effect */
+    border: 4px solid lightgray;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+  /* On mouse-over, add a deeper shadow */
+.project:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+.project-description{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    justify-content: space-between;
 }
